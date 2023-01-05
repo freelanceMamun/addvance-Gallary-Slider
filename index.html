@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+   <div class="Advance Image Gallery Zoom Efacit"></div>
+     <div class="container">
+          <div class="gallery-lightbox">
+                <!-- Row dispalay as flex -->
+               <div class="row">
+                     <div class="gallery-lightbox__box active" data-index="0" data-fullsize = "/images/img-full-1.jpg" data-caption = "Gallery caption goes here for 1">
+                          <img src="./images/img-full-1.jpg" alt="">  
+                     </div> 
+                     <div class="gallery-lightbox__box" data-index="1" data-fullsize="/images/img-full-2.jpg"
+                     data-caption="Gallery caption goes here for 1">
+                         <img src="./images/img-full-2.jpg" alt="">
+                     </div>
+                     <div class="gallery-lightbox__box" data-index="2" data-fullsize="/images/img-full-3.jpg" data-caption="">
+                          <img src="./images/img-full-3.jpg" alt="">
+                     </div>
+                     <div class="gallery-lightbox__box" data-index="3" data-fullsize="/images/img-full-4.jpg" data-caption="">
+                          <img src="./images/img-full-4.jpg" alt="">
+                     </div>
+                     <div class="gallery-lightbox__box" data-fullsize="./images/img-full-5.jpg" data-index="4" data-caption="">
+                           <img src="./images/img-full-5.jpg" alt="">
+                     </div>
+                     <div class="gallery-lightbox__box" data-index="5" data-fullsize="/images/img (3).jpg" data-caption="">
+                           <img src="./images/img (3).jpg" alt="">
+                     </div>
+                     <div class="gallery-lightbox__box" data-index="6" data-fullsize="/images/img (1).jpg">
+                           <img src="./images/img (1).jpg" alt="">
+                     </div>
+                     <div class="gallery-lightbox__box" data-index="7" data-fullsize="/images/img (2).jpg">
+                           <img src="./images/img (2).jpg" alt="">
+                     </div>
+               </div>
+          </div>
+     </div>
+
+ <!-- Popup -->
+ <div class="gallery-lightbox__popup">
+      <div class="gallery-lightbox__popup--option">
+             <a href="" class="cloaseLightbox" ><i class="ri-close-line"></i></a>
+
+             <a href="" class="option-link fullscreen"><i class="ri-fullscreen-line"></i></a>
+             <a href="" class="option-link zoom-out"><i class="ri-zoom-out-line"></i></a>
+             <a href="" class="option-link zoom-in"><i class="ri-zoom-in-line"></i></a>
+
+             <a href="" class="dowload" download=""><i class="ri-download-2-line"></i></a>
+     </div> <!---gallery-lightbox__popup- Option end -->
+
+            <div class="gallery-lightbox-content">
+
+                  <div class="fullview">
+                        <img src="" alt="">  
+                  </div>
+            </div>  <!--gallery-lightbox-content end  -->
+
+           <div class="gallery-lightbox__popup--navigation">
+             <button class="arrow arrow-left"><i class="ri-arrow-left-line"></i></button>
+             <button class="arrow arrow-right"><i class="ri-arrow-right-line"></i></button>
+           </div>  
+
+ </div>  <!--popup end  -->
+
+    <script src="slide.js"></script>
+</body>
+</html>
